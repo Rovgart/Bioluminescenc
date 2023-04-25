@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:ital,wght@1,100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:ital,wght@1,100&family=Roboto:wght@300&family=Tangerine&display=swap" rel="stylesheet">
+    <style>
+         
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.navigation-bar{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    padding:1.5rem;
+    
+}
+
+.logo{
+    display: flex;
+    place-items: center;
+}
+.logo>p{
+    color: black;
+    place-items: center;
+}
+.navi-list{
+    display: flex;
+    list-style-type: none;
+    font-size: 1rem;
+    color:black;
+    place-items: center;
+}
+.navi-list>li{
+    margin:.5rem;
+    padding:.7rem;
+
+}
+.navi-list>:nth-child(6){
+    display:none;
+}
+/* Changing color */
+@keyframes changing {
+    from{
+        font-size:default;
+        background-color: default;
+        color:default;
+    }
+    to{
+        font-size: 1.2rem;
+        background-color: tan;
+        color:white;
+    }
+    
+}
+.navi-list>li:hover{
+    cursor: pointer;
+    animation-name: changing;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.all{
+    background-image: url(materiały/tojestot.jpg);
+    color:white;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    padding:4rem;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    padding:3rem;
+    text-align: center;
+    
+}
+.cont{
+    background-color: black;
+    padding:3rem;
+}
+.cont>:nth-child(2){
+    font-size: 2rem;
+
+}
+
+/* Animacje w zdjęciach */
+@keyframes bordering_sizing {
+    from{
+        background-color: none;
+        color:default;
+        font-size: default;
+    }
+    to{
+        background-color: rgba(64, 128, 103, 0.37);
+        text-shadow: 1px 1px 1px black;
+        font-size:10rem;
+    
+    }
+}
+.cont:hover{
+    cursor: pointer;
+    animation-name: bordering_sizing;
+    animation-duration: 2s;
+    animation-fill-mode: both ;
+}
+.radiate{
+}
+span{
+    
+    font-size:xx-large;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tangerine', cursive;
+    
+}
+.article-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    place-items: center;
+}
+.article-container{
+    background-image: url(materiały/firefly_wallpaper.jpg);
+}
+.article-container>div{
+    
+}
+#h1_article-container{
+    grid-column:1/5;
+}
+.first-ph{
+    grid-column: 1/5;
+    grid-row:2;
+}
+.firef{
+    grid-column:1/5;
+    grid-row:3;
+}
+
+.texty{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color:white;
+}
+.firefly-cd{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    place-items: center;
+    margin-top:7rem;
+    font-weight: bolder;
+    backdrop-filter: blur(5px);
+    grid-column:1/5;
+}
+.firefly-cd>div>p{
+    margin:1rem;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.article-tobecnt{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-image: url(materiały/firefly_wallpaper.jpg);
+}
+.article__right{
+    display:flex;
+    flex-direction: column;
+    place-items: center;
+}
+.article__right>h3{
+    margin-top: .9rem;
+}
+.pictr__article{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    box-shadow: .4rem .4rem .4rem .4rem black;
+    place-items: center;
+    background-image: url(materiały/bckonbiolumi.jpg);      
+    color:white;
+
+}
+.pict{
+    display:flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: white;
+}
+.pict>:nth-child(2){
+    margin-top:1rem;
+}
+.allpict{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    
+}
+.art-textbl{
+    margin: 5rem;
+}
+.art_sec_part{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    place-items: center;
+    background-image: url(materiały/bckonbiolumi.jpg);
+    background-position: center;
+
+}
+#unheading{
+    grid-column:1/5;
+    
+}
+#strct{
+    grid-column: 1/5;
+}
+.sec_part-text{
+    padding:3rem;
+}
+.art_sec_part-advbiolumi{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    width:75%;
+    margin: 0 auto;
+    place-items: center;
+    margin-top:10rem;
+}
+.article__sright{
+    padding: 2rem;
+}
+.photo{
+    border-radius:10rem;
+    box-shadow: 1rem 1rem 1rem black;
+}
+.blacky{
+    color:black;
+    grid-column:1/5;
+}
+.blackytrue{
+    color:black;
+}
+#video{
+    grid-row:3;
+    grid-column: 2/3;
+}
+/* Media queries */
+@media (max-width:1629px){
+    /* .third{
+        grid-row:3;
+        grid-column: 2/3;
+    }
+    .second{
+        grid-row:2;
+        grid-column: 2/3;
+    }
+    .firstt{
+        grid-row:1;
+        grid-column: 2/3;
+    }
+    .radiate{
+        border-radius: none;;
+    } */
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #biolumiphoto{
+        display: flex;
+        flex-direction: column;
+    }
+    .biolumifact1{
+        grid-column:2/3
+    }
+    .biolumifact2{
+        grid-row:2;
+        grid-column: 2/3;
+    }
+    .biolumifact3{
+        grid-row:3;
+        grid-column: 2/3;
+    }
+}
+   
+
+
+@media (max-width:1393px){
+    .allpict{
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:1245px){
+    .title{
+        grid-column:4;
+    }
+    .ffly{
+        grid-row:2;
+        grid-column:4
+    }
+    .withbigpic{
+        grid-row:4;
+        grid-column:1/5;
+    }
+    .article__right{
+        grid-column:1/3
+    }
+}
+@media (max-width:1119px){
+  #video{
+      grid-column:1/5;
+      grid-row:4;
+  }
+  .sec_part-pct{
+      grid-row:2;
+      grid-column:1/5;
+  }
+  .mhm{
+      grid-column:1/5;
+      grid-row:3;
+  }
+}
+@media (max-width:935px){
+    .dis{
+        display:none;
+    }
+    .navi-list>:nth-child(6){
+        display:flex;
+    }
+
+    #video>iframe{
+        width:75%;
+    }
+}
+@media (max-width:831px){
+    .pict{
+        width:50%;
+        place-items: center;
+        display:none;
+    }
+    .cont>img{
+        width:75%;
+    }
+    .cont>p{
+        font-size:1rem;
+    }
+    .biolumifact1>img, .biolumifact2>iframe, .biolumifact3>img{
+        width:100%
+    }
+    
+        .article__right>img, .ffly>img{
+        width:75%;
+        
+    }
+}
+@media (max-width:600px){
+    .first-ph>img{
+        width:75%;
+        margin:0 auto;
+        place-items: center;
+    }
+}
+@media (max-width:619px){
+    .sec_part-pct>img{
+        width:80%;
+    }
+    
+}
+@media (max-width:479px){
+    .ffly>img{
+        text-align: center;
+        grid-column: 2/3;
+    }
+    .ffly{
+        grid-column: 1/5;
+    }
+}
+@media (max-width:1359px){
+    #ollist{
+        grid-column: 3/5;
+    }
+}
+
+
+
+.int-facts{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    background-image: url(materiały/firefly.jpg);
+    background-position: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+    
+
+
+}
+#int-h1{
+    grid-column: 1/5;
+}
+.inttext{
+    grid-column: 1/5;
+}
+
+#int-h1, .inttext, #ollist{
+    backdrop-filter: blur(5px);
+}
+#ollist{
+    grid-column: 1/5;
+}
+.h2ish{
+    color:white;
+    grid-column: 2/4;
+}
+.biolumifunc{
+    grid-column:1/5;
+}
+#biolumiphoto{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-column: 1/5;
+    place-items: center;
+    
+}
+#biolumiphoto>div{
+    border: 2px solid white;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    box-shadow: .3rem .3rem .3rem black;
+    place-items: center;;
+    color:black
+    border: 1px solid white;
+    padding: 1.4rem;;
+
+}
+.makers{
+    font-size:1.5rem;
+}
+.white{
+    color:white;
+    font-weight:bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+    </style>
+    <body>
+    <header>
+        <nav class="navigation-bar">
+            <div class="logo">
+                <img src="materiały/i_lo.png" alt="">
+                <p><span>I LO Rzeszów</span></p>
+            </div>
+        </nav>
+    </header>
+    <main class="all">
+        <h1>Projekt o świetlikach</h1>
+        <div class="container">
+            <div class="firstt cont">
+                <img class="radiate" src="materiały/firefly1.jpg" alt="">
+                <p>Świetliki-informacje</p>
+            </div>
+            <div class="third cont">
+                <img class="radiate" src="materiały/firefly3.jpg" alt="">
+                <p>Co sprawia, że świetliki świecą</p>
+            </div>
+            <div class="second cont" >
+                <img class="radiate" src="materiały/firefly2.jpg" alt="">
+                <p>Zjawisko Bioluminescencji</p>
+            </div>
+            
+            <script src="materiały/script.js"></script>
+        </div>
+    </main>
+    <article>
+        <div class="article-container">
+            <div id="h1_article-container">
+                 <h1>Czym są świetliki ?</h1>
+            </div>
+            <div class="first-ph">
+                <img class="photo" src="materiały/ff.jpg" alt="">
+            </div>
+            <div class="firef texty">
+                <p>Świetliki i iskrzyki są to owady zaliczane do chrząszczy z rodziny świetlikowate posiadające zdolność do bioluminescencji. Żyją w zaroślach i wysokich trawach</p>
+            </div>
+            <div class="firefly-cd">
+                <div class="title texty">
+                    <h1>Świetlik świętojański</h1>
+                    <p>Świetlik świętojański(Lampyris noctiluca) – jeden z trzech gatunków świetlika występujących na terenie Polski, szczególnie skrajach lasów obficie porośniętych krzewami, zbiorowiskach wysokich bylin, pobrzeżach żywopłotów i parkach.</p>
+                    <p>Dorosłe osobniki żyją krótko i nie pobierają żadnego pokarmu. Świetliki nocami w lipcu latają poszukując samic, które siedząc na roślinach przywabiają świeceniem potencjalnych partnerów. Zapłodnione samice składają jaja do ziemi.</p>
+                </div>
+                <div class="ffly">
+                    <img class="photo" src="materiały/swietlik.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    <div class="article-tobecnt">
+        <div class="article__right texty">
+            <img class="photo" src="materiały/firefly_female.jpg" alt="">
+            <h3>Larwa samicy świetlika</h3>
+        </div>
+        <div class="withbigpic texty">
+            <p>Świecą głównie samice, które nie mają skrzydeł i prawie nie widzą. Samce latają ale rzadko świecą. Samice wabią samce w celach prokreacji i mają na to niewiele czasu, bo żyją zaledwie kilka dni.
+                Nawet nie jedzą w tym czasie! Brzmi nie bajkowo, tym bardziej, że świetliki to wdzięczni bohaterowie filmów dla dzieci takich jak: „Księżniczka i Żaba” (z super muzyką) czy „Dzwoneczek”.
+            </p>
+        </div>
+    </div>
+        
+        <div class="pictr__article">
+            <div class="title">
+                <h1>Jak to się dzieje, że świetliki świecą ?</h1>
+            </div>
+            <div class="allpict">
+                <div class="pict">
+                    <img src="materiały/Firefly_luciferin (2).svg" alt="">
+                    <h3>Lucyferyna- wzór strukturalny</h3>
+                </div>
+                <div class="pict">
+                    <img src="materiały/luciferin3d.jpg" alt="">
+                    <h3>Model lucyferyny</h3>
+                </div>
+                <div class="pict">
+                    <img src="materiały/lucyferyna3d.png" alt="">
+                    <h3>Model lucyferyny w 3D </h3>
+                </div>
+                <div class="texty blacky white">
+                    <p> Co najmniej dwa związki chemiczne są potrzebne do produkcji światła. Ten, który produkuje światło, jest ogólnie nazywany „lucyferyną”, natomiast ten, który wzbudza lub katalizuje reakcje, nazywa się „lucyferazą”.Lucyferaza katalizuje utlenianie lucyferyny, co doprowadza do powstania światła i oksylucyferyny. U większości organizmów lucyferyna musi być dostarczona do systemu poprzez dietę lub podczas wewnętrznej syntezy. Czasami lucyferyna i białko katalizujące (zamiennik lucyferazy) oraz kofaktor taki jak tlen, łączą się razem w jedną całość zwaną „fotoproteiną”. Molekuła ta może zostać wzbudzona do produkcji światła, gdy do systemu zostanie wprowadzony odpowiedni jon (najczęściej jest to wapń).
+                    </p>
+                </div>
+                <div class="texty blacky white">
+                    Odkrycie, że bioluminescencja u świetlików zachodzi po zmieszaniu ekstraktów lucyferyny i lucyferazy, zostało dokonane w 1887 r. przez Raphaëla Dubois, profesora fizjologii na Université de Lyon. </p>
+                </div>
+                <div class="texty blacky white">
+                    <h3>Wzór sumaryczny lucyferyny świetlików: C<sub>11</sub>H<sub>8</sub>N<sub>2</sub>O<sub>3</sub>S<sub>2</sub></h3>
+                </div>
+        </div>
+        </div>
+        <div class="art_sec_part">
+            <div id="unheading">
+                <h1>Zjawisko Bioluminescencji</h1>
+            </div>
+            <div class="sec_part-pct">
+                <img class="photo" src="materiały/biolumi.jpg" alt="">
+            </div>
+            <div class="mhm texty">
+                <p>Bioluminescencja to zdolność do produkcji i emisji światła przez organizmy żywe, będąca wynikiem reakcji chemicznych, podczas których, energia chemiczna zamieniana jest w energię świetlną. Jest to typ chemiluminescencji. Zjawisko to jest typowe głównie dla organizmów morskich. Jest głównym źródłem światła na dnie oceanów. Bioluminescencja jest nieobecna (z kilkoma wyjątkami) w wodach słodkich, natomiast na lądzie najbardziej znanymi organizmami zdolnymi do produkcji światła są grzyby z gromady Basidiomycota oraz kilka rodzin owadów.</p>
+            </div>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W0pO6R52uYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="int-facts">
+            <div id="int-h1">
+                <h1>Ciekawostki</h1>
+            </div>
+            <div class="inttext texty">
+                <p>Co ciekawe, mimo setek typów świecących organizmów w morzu, istnieje zaskakująco mało podstawowych lucyferyn (transmiterów światła). Rozróżnić możemy:</p>
+            </div>
+            <div id="ollist" class="texty">
+                <ol>
+                    <li>lucyferynę bakteryjną (zredukowany fosforan ryboflawiny)</li>
+                    <li>lucyferynę produkowaną przez bruzdnice (pochodzącą i zbliżoną w budowie do chlorofilu)</li>
+                    <li>lucyferynę Vargula (lub Cypridina, występującą u małżoraczków i bezpośrednio związaną z dietą – synteza z tryptofanu, izoleucyny i argininy)</li>
+                    <li>koelenterazynę (najbardziej rozpowszechnioną, będącą emiterem światła dla fotoproteiny „ekworyny”)</li>
+                    <li>lucyferynę świetlika (która wymaga ATP jako kofaktora).</li>
+                </ol>
+            </div>
+           
+            <div class="h2ish secinth2-facts">
+                <h2>Funkcje bioluminescencji u organizmów</h2>
+            </div>
+            <div  class="biolumifunc texty">
+                <p>Bioluminescencja pełni różne funkcje, których wielu jeszcze nie poznaliśmy. U jednego organizmu może służyć jednoczenie dwóm lub więcej celom, zarówno defensywnym jak i ofensywnym. W ramach funkcji obronnych, bioluminescencja może służyć np. przestraszeniu / spłoszeniu przeciwnika, kamuflowaniu się, tworzeniu „zasłony dymnej” / zmyleniu przeciwnika, odwróceniu uwagi przeciwnika na inną część ciała ofiary, tworzeniu ubarwienia ostrzegawczego / odstraszającego lub może znajdować się w części ciała potencjalnej ofiary, którą zdolna jest utracić w czasie ataku (jak np. odrzucany ogon u jaszczurek) może również działać jak alarm (w chwili niebezpieczeństwa zwraca jak największą uwagę drapieżników większych niż przeciwnik).</p>
+            </div>
+            <div id="biolumiphoto">
+                <div class="biolumifact1">
+                    <img src="materiały/defensebiolumi.jpg" alt="">
+                </div>
+                <div class="biolumifact2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oKjFVBVGad0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="biolumifact3">
+                    <img src="materiały/attackbiolumi.jpg" alt="">
+                </div>
+                                    
+            </div>
+        </div>  
+    </article>
+        
+    
+</body>
+</html>
